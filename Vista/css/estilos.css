@@ -1,0 +1,108 @@
+p * {
+    display: block;
+}
+
+label{
+
+    font-size: 16px;
+}
+
+input .nombre , .clave {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 100%;
+    border: 1px solid #333;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+textarea.descripcion {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 100%;
+    border: 1px solid #333;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+textarea:invalid {
+    border-color: #900;
+    background-color: #FDD;
+}
+
+textarea:focus:invalid{
+    outline: none;
+}
+
+/* Este es nuestro diseño para los campos no válidos */
+input:invalid {
+    border-color: #900;
+    background-color: #FDD;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+select:invalid {
+    border-color: #900;
+    background-color: #FDD;
+}
+
+select:focus:invalid {
+    outline: none;
+}
+
+
+.error {
+    display: inline-block;
+    width : 240px;
+    padding: 10px;
+    font-size: 80%;
+    color: white;
+    background-color: #D44;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
+.sin_error{
+    display: none;
+}
+
+.tipo_clave {
+    display: inline-block;
+    width : 250px;
+    padding: 0;
+    font-size: 80%;
+    color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.tipo_clave_debil {
+    background-color: #f6891f;
+    padding: 0.3em;
+}
+
+.tipo_clave_normal {
+    background-color: #eacc20;
+    padding: 0.3em;
+}
+
+.tipo_clave_fuerte {
+    background-color: #22cf00;
+    padding: 0.3em;
+}
+
+.custom-file-input:lang(es)~.custom-file-label::after {
+    content: "Explorar";
+}
