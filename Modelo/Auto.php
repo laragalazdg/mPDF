@@ -14,6 +14,9 @@ class Auto {
 		$this->mensajeoperacion ="";
 	}
 
+	/**
+	*SETS
+	*/
 	public function setear($patente, $marca, $modelo, $dni){
 		$this->setPatente($patente);
 		$this->setMarca($marca);
@@ -40,6 +43,9 @@ class Auto {
 		$this->mensajeoperacion=$mensajeoperacion;
 	}
 
+	/**
+	*GETS
+	*/
 	public function getPatente(){
 		return $this->patente;
 	}
@@ -60,6 +66,9 @@ class Auto {
 		return $this->mensajeoperacion ;
 	}
 
+	/**
+	*CONSULTAS A LA BASE DE DATOS
+	*/
 	public function cargar(){
 		$resp = false;
 		$base=new BaseDatos();

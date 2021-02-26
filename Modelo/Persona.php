@@ -78,7 +78,9 @@ class Persona{
 		return $this->mensajeoperacion ;
 	}
 
-
+	/*
+	*Consultas a la base de datos
+	*/
 	public function cargar(){
 		$resp = false;
 		$base=new BaseDatos();

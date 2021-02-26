@@ -1,7 +1,7 @@
 <?php
 include_once("../configuracion.php");
 include_once("estructura/cabecera.php");
-
+//formulario que recibe datos ingresados por el usuario y llama a la funcion generar Formulario
 $objAbmAuto = new AbmAuto();
 $listaAuto = $objAbmAuto->buscar(null);
 //print_r($listaAuto);

@@ -1,4 +1,8 @@
 <?php
+/**
+*METODO QUE VERIFICA EL METODO POST O GET PARA RECIBIR EL ARREGLO DE DATOS DE
+*FORMULARIOS Y DEVUELVE UN ARREGLO
+*/
 function data_submitted() {
     $_AAux= array();
     if (!empty($_POST))

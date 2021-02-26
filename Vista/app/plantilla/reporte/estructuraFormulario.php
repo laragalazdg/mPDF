@@ -1,4 +1,10 @@
 <?php
+/**
+*Este metodo regresa una estructura html del pdf
+*imprimiendo los datos que recibe
+*@param array $datos
+*@return string $plantilla
+*/
 function generarFormulario($datos){
 	//print_r($datos);
 	$plantilla = '<body>
